@@ -32,9 +32,13 @@ Claude Code CLI rất mạnh mẽ nhưng yêu cầu terminal. Dự án này bọ
 ### Quản lý Phiên
 - **Lưu trữ bền vững** — lưu trong SQLite, tồn tại qua khởi động lại
 - **Khôi phục phiên** — tiếp tục phiên Claude CLI qua `--resume` (không tốn token thêm)
-- **Branch** — phân nhánh cuộc trò chuyện
+- **Branch (phân nhánh)** — sao chép cuộc trò chuyện để khám phá hướng khác; hiển thị dạng cây có thể thu gọn trong sidebar
+- **Split View (chia màn hình)** — hiển thị 2 phiên cạnh nhau, ngang hoặc dọc (kéo thanh phân chia để điều chỉnh)
+- **Pin (ghim yêu thích)** — ghim phiên quan trọng lên đầu sidebar (⭐)
 - **Đặt tên tự động** — từ tin nhắn đầu tiên
 - **Đổi tên / xóa** trực tiếp trong danh sách
+- **Stop (dừng)** — ngắt phản hồi Claude giữa chừng bằng một cú nhấp
+- **Dọn dẹp bộ nhớ** — xóa các file phiên Claude CLI không dùng nữa (🗑)
 
 ### Đồng hồ đo Mức sử dụng (S / W / M)
 

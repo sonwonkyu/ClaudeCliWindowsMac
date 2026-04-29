@@ -40,9 +40,13 @@ Claude Code CLI is powerful, but requires a terminal. This project wraps it in a
 ### Session Management
 - **Persistent sessions** — stored in SQLite; survives restarts
 - **Session restore** — resumes Claude CLI session via `--resume` (no extra token cost)
-- **Branch** — fork any conversation to explore alternatives
+- **Branch** — fork any conversation to explore alternatives; branches shown as collapsible tree in sidebar
+- **Split View** — open two sessions side by side (horizontal or vertical split, draggable divider)
+- **Pin / Favorite** — pin important sessions to the top of the sidebar (⭐)
 - **Auto-title** — session named automatically from first message
 - **Inline rename / delete**
+- **Stop** — interrupt Claude mid-response with a single click
+- **Storage cleanup** — one-click delete of orphaned Claude CLI session files from disk (🗑)
 
 ### Usage Gauges (S / W / M)
 Real-time Claude API usage displayed in the header:

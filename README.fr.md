@@ -32,9 +32,13 @@ Claude Code CLI est puissant, mais nécessite un terminal. Ce projet l'enveloppe
 ### Gestion des Sessions
 - **Persistance** — stocké dans SQLite, survit aux redémarrages
 - **Restauration** — reprend la session Claude CLI avec `--resume` (sans coût de tokens supplémentaire)
-- **Branch** — bifurquer la conversation pour explorer des alternatives
+- **Branch** — bifurquer la conversation ; arbre rétractable dans la barre latérale
+- **Split View** — afficher deux sessions côte à côte, horizontal ou vertical (séparateur déplaçable)
+- **Pin / Favori** — épingler les sessions importantes en haut de la barre latérale (⭐)
 - **Titre automatique** — généré depuis le premier message
 - **Renommer / supprimer** en ligne
+- **Stop** — interrompre la réponse de Claude en un clic
+- **Nettoyage du stockage** — supprimer les fichiers de session orphelins en un clic (🗑)
 
 ### Jauges d'Utilisation (S / W / M)
 

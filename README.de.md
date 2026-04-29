@@ -32,9 +32,13 @@ Claude Code CLI ist mächtig, erfordert aber ein Terminal. Dieses Projekt kapsel
 ### Sitzungsverwaltung
 - **Persistenz** — in SQLite gespeichert, übersteht Neustarts
 - **Wiederherstellung** — nimmt Claude CLI-Sitzung mit `--resume` wieder auf (keine Extra-Token-Kosten)
-- **Branch** — aktuelles Gespräch verzweigen
+- **Branch** — Gespräch verzweigen; einklappbarer Baum in der Seitenleiste
+- **Split View** — zwei Sitzungen nebeneinander anzeigen, horizontal oder vertikal (Trennlinie ziehbar)
+- **Pin / Favorit** — wichtige Sitzungen oben in der Seitenleiste anheften (⭐)
 - **Auto-Titel** — aus der ersten Nachricht generiert
 - **Umbenennen / Löschen** direkt in der Liste
+- **Stop** — Claude-Antwort mit einem Klick unterbrechen
+- **Speicherbereinigung** — verwaiste Claude-CLI-Sitzungsdateien per Klick löschen (🗑)
 
 ### Nutzungsanzeigen (S / W / M)
 
