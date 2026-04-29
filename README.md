@@ -1,5 +1,11 @@
 # Claude Code Web
 
+[![GitHub Stars](https://img.shields.io/github/stars/sonwonkyu/ClaudeCliWindowsMac?style=social)](https://github.com/sonwonkyu/ClaudeCliWindowsMac/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
+[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows-blue)](#)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-required-blueviolet)](https://docs.anthropic.com/en/docs/claude-code/overview)
+
 **Use Claude Code entirely in your browser — no terminal required.**
 
 A lightweight web UI that wraps the [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code/overview) with persistent sessions, real-time usage gauges, model switching, and file attachments. Works on **macOS** and **Windows**.

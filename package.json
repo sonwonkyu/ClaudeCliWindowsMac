@@ -1,7 +1,32 @@
 {
   "name": "claude-cli-web",
   "version": "1.0.0",
-  "description": "Claude CLI in the browser",
+  "description": "Browser UI for Claude Code CLI — persistent sessions, usage gauges, model switching, file attachments. No terminal required.",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "anthropic",
+    "ai",
+    "web-ui",
+    "llm",
+    "developer-tools",
+    "electron",
+    "browser",
+    "sqlite",
+    "websocket",
+    "claude-api",
+    "ai-assistant",
+    "terminal-alternative"
+  ],
+  "homepage": "https://github.com/sonwonkyu/ClaudeCliWindowsMac",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sonwonkyu/ClaudeCliWindowsMac.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sonwonkyu/ClaudeCliWindowsMac/issues"
+  },
+  "license": "MIT",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
