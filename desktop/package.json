@@ -1,0 +1,123 @@
+{
+  "name": "claude-code-web-desktop",
+  "version": "1.0.0",
+  "description": "Claude Code Web Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win",
+    "build:all": "electron-builder --mac --win",
+    "pack": "electron-builder --dir"
+  },
+  "build": {
+    "appId": "com.claudecodeweb.app",
+    "productName": "ClaudeCodeWeb",
+    "asar": false,
+    "afterPack": "./afterPack.js",
+    "directories": {
+      "output": "dist",
+      "buildResources": "."
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "server-path.json",
+      "loading.html",
+      "icon.png",
+      "icon.ico"
+    ],
+    "extraResources": [
+      {
+        "from": "../server.js",
+        "to": "server/server.js"
+      },
+      {
+        "from": "../usage-poller.js",
+        "to": "server/usage-poller.js"
+      },
+      {
+        "from": "../public",
+        "to": "server/public"
+      },
+      {
+        "from": "../package.json",
+        "to": "server/package.json"
+      },
+      {
+        "from": "../node_modules",
+        "to": "server/node_modules"
+      },
+      {
+        "from": "../data.db",
+        "to": "server/data.db"
+      },
+      {
+        "from": "../uploads",
+        "to": "server/uploads"
+      },
+      {
+        "from": "../scripts",
+        "to": "server/scripts"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "icon.png",
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "darkModeSupport": true,
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false,
+      "identity": null,
+      "extendInfo": {
+        "CFBundleDisplayName": "Claude Code Web",
+        "LSEnvironment": {
+          "MallocNanoZone": "0"
+        }
+      }
+    },
+    "dmg": {
+      "title": "Claude Code Web",
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "icon": "icon.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "installerHeaderIcon": "icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Claude Code Web"
+    }
+  },
+  "devDependencies": {
+    "electron": "^36.9.5",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "tree-kill": "^1.2.2"
+  }
+}
